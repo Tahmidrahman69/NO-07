@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOM TECH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- For icons -->
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">BOOM TECH</h1>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="product.html" class="nav-link">Products</a>
+                <a href="About.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <div class="container">
+            <h2 class="page-title">Shopping Cart</h2>
+            
+            <div class="cart-content">
+                <!-- Cart Items Section -->
+                <section class="cart-items" id="cart-items">
+                    <!-- Sample Cart Item -->
+                    <div class="cart-item" data-id="1">
+                        <img src="images/14.jpg" alt="Product Image" class="item-image">
+                        <div class="item-details">
+                            <h3 class="item-name">iPhone 14 Plus (Renewed), 128GB, Blue</h3>
+                            <p class="item-price">$370.95</p>
+                        </div>
+                        <div class="quantity-controls">
+                            <button class="qty-btn decrease">-</button>
+                            <span class="quantity">1</span>
+                            <button class="qty-btn increase">+</button>
+                        </div>
+                        <p class="item-subtotal">$370.95</p>
+                        <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                    </div>
+                    
+                    <!-- Another Sample Cart Item -->
+                    <div class="cart-item" data-id="2">
+                        <img src="images/case.jpg" alt="Product Image" class="item-image">
+                        <div class="item-details">
+                            <h3 class="item-name">Skytech King 95 Gaming PC Desktop</h3>
+                            <p class="item-price">$124.99</p>
+                        </div>
+                        <div class="quantity-controls">
+                            <button class="qty-btn decrease">-</button>
+                            <span class="quantity">2</span>
+                            <button class="qty-btn increase">+</button>
+                        </div>
+                        <p class="item-subtotal">$249.49</p>
+                        <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                    </div>
+
+
+                    <div class="cart-item" data-id="2">
+                        <img src="images/gaming.jpg" alt="Product Image" class="item-image">
+                        <div class="item-details">
+                            <h3 class="item-name">YPBDAN Gaming Headset for PS5, PS4, Xbox Series</h3>
+                            <p class="item-price">$49.99</p>
+                        </div>
+                        <div class="quantity-controls">
+                            <button class="qty-btn decrease">-</button>
+                            <span class="quantity">4</span>
+                            <button class="qty-btn increase">+</button>
+                        </div>
+                        <p class="item-subtotal">$199.96</p>
+                        <button class="remove-btn"><i class="fas fa-trash"></i></button>
+                    </div>
+                </section>
+                
+                <!-- Empty Cart Message (hidden by default) -->
+                <div class="empty-cart" id="empty-cart" style="display: none;">
+                    <i class="fas fa-shopping-cart empty-icon"></i>
+                    <h3>Your cart is empty</h3>
+                    <p>Add some products to get started!</p>
+                    <a href="#" class="btn continue-shopping">Continue Shopping</a>
+                </div>
+                
+                <!-- Order Summary Section -->
+                <aside class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span id="subtotal">$820.04</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Shipping</span>
+                        <span id="shipping">$25.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Tax</span>
+                        <span id="tax">$12.40</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span id="total">$857.44</span>
+                    </div>
+                    <button class="btn checkout-btn">Proceed to Checkout</button>
+                    <a href="product.html" class="btn continue-shopping">Continue Shopping</a>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 BOOM TECH(TAHMID). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

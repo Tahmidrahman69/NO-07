@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reusable Product Card</title>
+    <style>
+
+       
+
+       *{
+        box-sizing: border-box;
+       }
+
+       /* ===== HEADER ===== */
+        .header{
+            background:#fff;
+            border-bottom:2px solid #007bff;
+        }
+
+        .navbar{
+            max-width:1200px;
+            margin:0 auto;
+            padding:16px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            font-size:26px;
+            font-weight:800;
+            color:#007bff;
+        }
+
+            /* ===== MENU ===== */
+        .menu{
+            display:flex;
+            list-style:none;
+            padding:0;
+        }
+
+        .menu li{
+             margin-left:30px;
+        }
+
+        .menu a{
+            text-decoration:none;
+            color:#333;
+            padding:8px 14px;
+            border-radius:4px;
+            transition:0.3s;
+        }
+
+        .menu a:hover{
+            background:#007bff;
+            color:#fff;
+        }
+
+        
+
+
+        .product-card{
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .product-card:hover{
+            transform: translateY(-8px) scale(1.08);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+            background-color:#007bff;
+            color: white;
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+        
+
+
+        .products{
+            display: flex;
+            gap: 20px;              
+            flex-wrap: wrap; 
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .price{
+            color: blue;
+            font-weight: bold;
+        }  
+        
+        .price:hover{
+            color: white;
+        }
+
+        
+        
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-card {
+                max-width: 100%;
+                margin: 0.5rem;
+            }
+        }
+
+         @media (max-width:400px){
+
+  .navbar{
+    flex-direction:column;
+  }
+
+  .logo{
+    margin-bottom:10px;
+    font-size:22px;
+  }
+
+  .menu{
+    flex-direction:column;
+    width:100%;
+    align-items:center;
+  }
+
+  .menu li{
+    margin:6px 0;
+  }
+
+  .menu a{
+    width:100%;
+    text-align:center;
+  }
+
+  .product-card{
+    width:100%;
+    transform:none;
+  }
+} 
+
+
+@media (max-width:400px){
+  body{
+    background:red !important;
+  }
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+ 
+        <header class="header">
+  <nav class="navbar">
+    <div class="logo">BOOM TECH</div>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      
+      <li><a href="About.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+    <!-- Reusable Product Card -->
+<div class="products">
+    <div class="product-card">
+        <img src="images/pc.jpg" alt="">
+
+        <h3>Lenovo Legion Tower 5i </h3>
+        <p class="price">$29.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/pc-2.jpg" alt="">
+        <h3>HERB GARDEN USA Esports Gaming PC</h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+     <div class="product-card">
+        <img src="images/monitor.jpg" alt="">
+        <h3>ASUS ROG Swift 32” 4K OLED Gaming Monitor</h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+     <div class="product-card">
+        <img src="images/light.jpg" alt="">
+        <h3>Govee Smart LED Light Bars</h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+     <div class="product-card">
+        <img src="images/mini.jpg" alt="">
+        <h3>KAMRUI Hyper H1 Mini Gaming PC</h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+      <div class="product-card">
+        <img src="images/vr.jpg" alt="">
+        <h3>Meta Quest 3S 128GB | VR Headset </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+      <div class="product-card">
+        <img src="images/xbox.jpg" alt="">
+        <h3>Xbox Wireless Gaming Controller</h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+      <div class="product-card">
+        <img src="images/case.jpg" alt="">
+        <h3>Skytech King 95 Gaming PC Desktop</h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/pad.jpg" alt="">
+        <h3>Corsair MM300 - Anti-Fray Cloth Gaming Mouse Pad </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/keybord.jpg" alt="">
+        <h3>GravaStar Mercury K1 Lite 75% Gaming Keyboard</h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/gaming.jpg" alt="">
+        <h3>YPBDAN Gaming Headset for PS5, PS4, Xbox Series </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+     <div class="product-card">
+        <img src="images/mother.jpg" alt="">
+        <h3>ASUS ROG Strix X870E-E Gaming WiFi AM5 X870 </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+     <div class="product-card">
+        <img src="images/samsung.jpg" alt="">
+        <h3>Samsung Galaxy S25 Ultra, 512GB </h3>
+        <p class="price">$1163</p>
+        <button>Add to Cart</button>
+    </div>
+     <div class="product-card">
+        <img src="images/moto.jpg" alt="">
+        <h3>Motorola Moto G Stylus 5G 2024 | Unlocked |  </h3>
+        <p class="price">$44.09</p>
+        <button>Add to Cart</button>
+    </div>
+     <div class="product-card">
+        <img src="images/i.jpg" alt="">
+        <h3>Apple iPhone 15 (Renewed), 128GB, Black - Unlocked </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+     <div class="product-card">
+        <img src="images/14.jpg" alt="">
+        <h3> Apple iPhone 14 Plus (Renewed), 128GB, Blue </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+     <div class="product-card">
+        <img src="images/ipad.jpg" alt="">
+        <h3>Apple iPad Pro 13-Inch (M4): Built for Apple Intelligence  </h3>
+        <p class="price">$1338.75</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/lenovo.jpg" alt="">
+        <h3> Lenovo Idea Tab - College Tablet - 11″ 2.5K IPS </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/16.jpg" alt="">
+        <h3> SHARECLOUD Android 16 Tablet 10.1 inch Tablet </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/17.jpg" alt="">
+        <h3> Lenovo Tab One - Lightweight Tablet - up to 12.5 Hours </h3>
+        <p class="price">$129.00</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/18.jpg" alt="">
+        <h3> Frameflow Tablet 10.1 inch, Android 15 Tablet </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/19.jpg" alt="">
+        <h3> Google Pixel Tablet - Android Tablet with 11-Inch Screen </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/20.jpg" alt="">
+        <h3> Microsoft Surface Pro 11 5G Cp 512Gb 13"/Plus/16Gb </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/21.jpg" alt="">
+        <h3>Samsung Galaxy Tab S10 FE+ Plus w/S-Pen | 128GB, </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/22.jpg" alt="">
+        <h3>OnePlus Pad 3 Storm Blue, 13.2″ 3.4K LCD 144 Hz  </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/23.jpg" alt="">
+        <h3> Lenovo - Yoga Tab Plus - 12.7" 3K (2944 x 1840) Tablet</h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/24.jpg" alt="">
+        <h3> Roku Smart TV 2025 - 50-Inch Select Series, 4K HDR </h3>
+        <p class="price">$242.65</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/25.jpg" alt="">
+        <h3>Samsung 65-Inch Class QLED Q7F Series Samsung </h3>
+        <p class="price">$472.00</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/26.jpg" alt="">
+        <h3>TCL 98-Inch Q65 QLED 4K UHD Smart TV  </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/27.jpg" alt="">
+        <h3>Sony 55-Inch 4K Ultra HD BRAVIA 3 LED Smart TV   </h3>
+        <p class="price">$39.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/28.webp" alt="">
+        <h3> The Housemaid's Secret: A totally gripping psychological</h3>
+        <p class="price">$07.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/29.webp" alt="">
+        <h3>His & Hers: A Novel Kindle Editionby Alice Feeney</h3>
+        <p class="price">$11.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/30.webp" alt="">
+        <h3>The Typewriter and the Guillotine: An American Journalist </h3>
+        <p class="price">$14.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="images/31.webp" alt="">
+        <h3> Read Between the Lies: A Novel Kindle Edition</h3>
+        <p class="price">$05.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    
+    <div class="product-card">
+        <img src="images/32.webp" alt="">
+        <h3> Hooked: A Thriller (Katrina & Goode Book 1)</h3>
+        <p class="price">$05.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+    
+    <div class="product-card">
+        <img src="images/33.webp" alt="">
+        <h3>The Answer Is No: A Short Story Kindle Edition </h3>
+        <p class="price">$04.99</p>
+        <button>Add to Cart</button>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

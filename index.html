@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOM TECH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+        }
+        .menu li {
+            margin-left: 2rem;
+            
+        }
+        .menu a {
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+        .menu a:hover {
+            background-color: #0056b3;
+            border-radius: 4px;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .hero .btn {
+            background-color: #fff;
+            color: #007bff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .hero .btn:hover {
+            background-color: #e9ecef;
+        }
+
+        .hero-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .discover{
+             font-family: 'Poppins', sans-serif !important;
+        }
+
+
+
+        .section-title{
+            text-transform: uppercase;
+            font-weight: 700;
+            color:#007bff;
+           font-family: 'Orbitron', sans-serif;
+
+
+
+        }
+        /* Products Section */
+        .products {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .products h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+        .product-info {
+            padding: 1rem;
+        }
+        .product-info h3 {
+            margin-bottom: 0.5rem;
+        }
+        .product-info .price {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+        .product-info .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .product-info .btn:hover {
+            background-color: #0056b3;
+        }
+        .product-title {
+            font-weight: 800; 
+            font-size: 1.rem;
+        }
+
+
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        footer p {
+            margin-bottom: 1rem;
+        }
+        footer .links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        footer .links li {
+            margin: 0 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            .menu {
+                margin-top: 1rem;
+            }
+            .menu li {
+                margin-left: 0;
+                margin-right: 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .products {
+                padding: 2rem 1rem;
+            }
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            footer .links {
+                flex-direction: column;
+            }
+            footer .links li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+    <nav class="navbar">
+        <div class="logo">BOOM TECH</div>
+
+        <ul class="menu">
+            
+            <li><a href="product.html">Products</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <section class="hero">
+        <h1 class="hero-title">WELCOME TO OUR STORE</h1>
+        <p class="discover">Discover amazing products at unbeatable prices.</p>
+        <a href="product.html" class="btn">Shop Now</a>
+    </section>
+
+    <section class="products">
+        <h2 class="section-title">Top Picks for You</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/pc.jpg" alt="Product 1">
+                <div class="product-info">
+                    <h3 class="product-title ">Lenovo Legion Tower 5i</h3>
+                    <p>This high-performance gaming PC
+                        comes in a premium black chassis
+                        with RGB lighting</p>
+                    <p class="price">$29.99</p>
+                    <a href="cart.html" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/monitor.jpg" alt="Product 2">
+                <div class="product-info">
+                    <h3>ASUS ROG Swift 32” 4K OLED Gaming Monitor</h3>
+                    <p>Premium 32-inch 4K OLED gaming monitor
+                       delivering ultra-fast refresh rates and
+                       stunning </p>
+                    <p class="price">$39.99</p>
+                    <a href="cart.html" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/pc-2.jpg" alt="Product 3">
+                <div class="product-info">
+                    <h3>HERB GARDEN USA Esports Gaming P</h3>
+                    <p>High-performance esports gaming PC
+                       designed for smooth gameplay, fast
+                    </p>
+                    <p class="price">$49.99</p>
+                    <a href="cart.html" class="btn">Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/laptop.jpg" alt="Product 4">
+                <div class="product-info">
+                    <h3>ASUS ROG Strix G16 (2025) Gaming Laptop</h3>
+                    <p>High-performance gaming laptop 
+                       featuring powerful hardware,
+                       fast display, efficient</p>
+                    <p class="price">$59.99</p>
+                    <a href="cart.html" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BOOM TECH(TAHMID). All rights reserved.</p>
+        <ul class="links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+```
